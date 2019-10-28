@@ -28,8 +28,8 @@ class Paddle:
 
     def update_position(self):
         ''' Updates paddle's position according to pressed arrow key. '''
-        screen_top = self.y < 0
-        screen_bottom = self.y > consts.SCREEN_HEIGHT - consts.PADDLE_LENGTH
+        screen_top = self.y < 3
+        screen_bottom = self.y > consts.SCREEN_HEIGHT - consts.PADDLE_LENGTH - 3
         if self.player == 1:
             if (pyxel.btn(pyxel.KEY_W)
                     or pyxel.btn(pyxel.GAMEPAD_1_UP)) and not screen_top:
