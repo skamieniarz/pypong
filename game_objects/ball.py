@@ -1,4 +1,4 @@
-''' Module containing Paddle class. '''
+''' Module containing Ball class. '''
 
 import consts
 import pyxel
