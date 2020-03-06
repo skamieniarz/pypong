@@ -9,10 +9,10 @@ class Table:
     ''' Class containing methods and variables related to game's table. '''
     def draw(self, middle_line=True):
         ''' Draws ping pong table. '''
-        pyxel.cls(consts.DARK_GREY)
+        pyxel.cls(consts.NAVY_BLUE)
         pyxel.rect(consts.MEDIUM_MARGIN, consts.MEDIUM_MARGIN,
                    consts.SCREEN_WIDTH - consts.BIG_MARGIN,
-                   consts.SCREEN_HEIGHT - consts.BIG_MARGIN, consts.DARK_GREEN)
+                   consts.SCREEN_HEIGHT - consts.BIG_MARGIN, consts.TURQUOISE)
         if middle_line:
             pyxel.line(consts.MEDIUM_MARGIN, consts.SCREEN_HEIGHT / 2,
                        consts.SCREEN_WIDTH - consts.MEDIUM_MARGIN - 1,
